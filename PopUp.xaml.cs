@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WhiskyTest
 {
@@ -19,9 +10,30 @@ namespace WhiskyTest
     /// </summary>
     public partial class PopUp : Window
     {
+        public List<PopUpItem> PopUpItems { get; set; }
+
         public PopUp()
         {
             InitializeComponent();
+            DataContext = this;
+            PopUpItems = GeneratePopUpItems();
         }
+
+        private List<PopUpItem> GeneratePopUpItems()
+        {
+            return Enumerable.Range(0, 5).ToList().ConvertAll(
+                x => new PopUpItem
+                {
+                    Title = String.Format("Title {0}", x),
+                    Content = String.Format("Content {0}", x),
+                }
+            );
+        }
+    }
+
+    public class PopUpItem
+    {
+        public string Title { get; set; }
+        public string Content { get; set; }
     }
 }
