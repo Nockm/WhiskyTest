@@ -152,5 +152,8 @@
   <ItemGroup>
     <Resource Include="glass_of_wine_full.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\application_view_list.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

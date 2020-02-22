@@ -5,15 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WhiskyTest.View"
              mc:Ignorable="d" 
+              Margin="0"
              d:DesignHeight="450" d:DesignWidth="800">
-    <StackPanel>
-        <Label Content="{Binding Title}"></Label>
-        <ListView x:Name="PhraseSetsListView" ItemsSource="{Binding PhraseSets}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Label Content="{Binding Title}" MouseDown="Label_MouseDown"></Label>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackPanel>
+    <Border>
+        <Border.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/Styles/Theme.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Border.Resources>
+        <StackPanel Background="{StaticResource NavBackBrush1}">
+            <Label Content="{Binding Title, FallbackValue='Testing'}" Style="{StaticResource NavCategoryLabelStyle}"></Label>
+            <ListBox x:Name="PhraseSetsListView" ItemsSource="{Binding PhraseSets}" Style="{StaticResource NavPhraseSetsListBoxStyle}">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem" BasedOn="{StaticResource NavPhraseSetListBoxItemStyle}"></Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" MouseDown="Label_MouseDown">
+                            <!-- <Image Source="/Resources/application_view_list.png"></Image> -->
+                            <Label Content="•" Style="{StaticResource NavPhraseSetLabelStyle}"></Label>
+                            <Label Content="{Binding Title}" Style="{StaticResource NavPhraseSetLabelStyle}"></Label>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Border>
 </UserControl>

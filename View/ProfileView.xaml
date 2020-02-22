@@ -6,14 +6,33 @@
              xmlns:local="clr-namespace:WhiskyTest.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel>
-        <Label DockPanel.Dock="Top" Content="{Binding Title}"></Label>
-        <ListView ItemsSource="{Binding CategorySet}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <local:CategoryView></local:CategoryView>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </DockPanel>
+    <Border>
+        <Border.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/Styles/Theme.xaml"/>
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </Border.Resources>
+        <Border Background="{StaticResource NavBackBrush1}">
+            <StackPanel Margin="{StaticResource RootMargin}">
+                <Border Style="{StaticResource RootHeaderContainerStyle}">
+                    <StackPanel Orientation="Vertical">
+                        <Label DockPanel.Dock="Top" Content="PepperText" Style="{StaticResource NavTitleLabelStyle}"></Label>
+                        <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource NavSubTitleLabelStyle}"></Label>
+                    </StackPanel>
+                </Border>
+                <ListBox ItemsSource="{Binding CategorySet}" Style="{StaticResource NavCategorySetListBoxStyle}">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem" BasedOn="{StaticResource NavCategorySetListBoxItemStyle}"></Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <local:CategoryView></local:CategoryView>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Border>
+    </Border>
 </UserControl>
