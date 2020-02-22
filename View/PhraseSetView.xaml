@@ -6,7 +6,18 @@
              xmlns:local="clr-namespace:WhiskyTest.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <DockPanel>
+    <StackPanel>
         <Label Content="{Binding Title}"></Label>
-    </DockPanel>
+        <ListView ItemsSource="{Binding Phrases}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel LastChildFill="False">
+                        <TextBox DockPanel.Dock="Left" Text="{Binding Left}"></TextBox>
+                        <Label>=</Label>
+                        <TextBox DockPanel.Dock="Right" Text="{Binding Right}"></TextBox>
+                    </DockPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackPanel>
 </UserControl>

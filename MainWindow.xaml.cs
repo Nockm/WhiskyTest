@@ -8,7 +8,7 @@ namespace WhiskyTest
     /// </summary>
     public partial class MainWindow : Window
     {
-        public AppModel AppModel { get; set; }
+        public static AppModel AppModel { get; set; }
 
         public MainWindow()
         {

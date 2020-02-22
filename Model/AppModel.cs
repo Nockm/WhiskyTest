@@ -90,7 +90,7 @@ namespace WhiskyTest.Model
         private ObservableCollection<Phrase> phrases = new ObservableCollection<Phrase>();
 
         public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
-        public ObservableCollection<Phrase> Entries { get { return phrases; } set { phrases = value; OnPropertyChanged(); } }
+        public ObservableCollection<Phrase> Phrases { get { return phrases; } set { phrases = value; OnPropertyChanged(); } }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)
         {
@@ -101,7 +101,7 @@ namespace WhiskyTest.Model
         {
             PhraseSet sheet = new PhraseSet();
             sheet.Title = "New PhraseSet " + i;
-            Enumerable.Range(0, 5).ToList().ConvertAll(Phrase.GenerateExample).ForEach(x => sheet.Entries.Add(x));
+            Enumerable.Range(0, 5).ToList().ConvertAll(Phrase.GenerateExample).ForEach(x => sheet.Phrases.Add(x));
             return sheet;
         }
     }
