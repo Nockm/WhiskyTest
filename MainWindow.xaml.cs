@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using WhiskyTest.Model;
 
 namespace WhiskyTest
 {
@@ -7,15 +8,15 @@ namespace WhiskyTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        public AppModel AppModel { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PopUp popUp = new PopUp();
-            popUp.Show();
+            AppModel = new AppModel();
+
+            DataContext = this;
         }
     }
 }
