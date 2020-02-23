@@ -71,6 +71,29 @@ namespace WhiskyTest.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
+        ///&lt;AppModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+        ///  &lt;Title&gt;new title&lt;/Title&gt;
+        ///  &lt;Profile&gt;
+        ///    &lt;Title&gt;New Profile 1&lt;/Title&gt;
+        ///    &lt;CategorySet&gt;
+        ///      &lt;Category&gt;
+        ///        &lt;Title&gt;New Category 0&lt;/Title&gt;
+        ///        &lt;PhraseSets&gt;
+        ///          &lt;PhraseSet&gt;
+        ///            &lt;Title&gt;New PhraseSet 0&lt;/Title&gt;
+        ///            &lt;Phrases&gt;
+        ///              &lt;Phrase&gt;
+        ///                &lt;Left&gt;New Left 0&lt;/Left&gt;
+        ///                &lt;Right&gt;New Right [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AppModel {
+            get {
+                return ResourceManager.GetString("AppModel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap comment_add {

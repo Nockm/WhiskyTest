@@ -3,9 +3,6 @@ using WhiskyTest.Model;
 
 namespace WhiskyTest
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public static AppModel AppModel { get; set; }
@@ -14,7 +11,7 @@ namespace WhiskyTest
         {
             InitializeComponent();
 
-            AppModel = new AppModel();
+            AppModel = Util.DataIO.XmlResourceToObj<AppModel>("/SampleData/AppModel.xml");
 
             DataContext = this;
         }

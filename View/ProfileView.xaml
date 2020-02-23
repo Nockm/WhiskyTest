@@ -18,7 +18,7 @@
             <StackPanel Margin="{StaticResource RootMargin}">
                 <Border Style="{StaticResource RootHeaderContainerStyle}">
                     <StackPanel Orientation="Vertical">
-                        <Label DockPanel.Dock="Top" Content="PepperText" Style="{StaticResource NavTitleLabelStyle}"></Label>
+                        <Label DockPanel.Dock="Top" Content="WhiskyTest" Style="{StaticResource NavTitleLabelStyle}"></Label>
                         <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource NavSubTitleLabelStyle}"></Label>
                     </StackPanel>
                 </Border>
