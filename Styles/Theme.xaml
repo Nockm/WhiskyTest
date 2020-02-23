@@ -1,8 +1,37 @@
-﻿<ResourceDictionary 
+﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
    >
+    <!-- 
+        Color themes.
+    -->
+    <!-- Normal
+    <Color x:Key="NavBackColor">#333</Color>
+    <Color x:Key="NavForeColor">#CCC</Color>
+    <Color x:Key="WorkBackColor">#EEE</Color>
+    <Color x:Key="WorkForeColor">#000</Color>
+    <Color x:Key="WorkButtonBackColor">White</Color>
+    <Color x:Key="WorkButtonForeColor">Black</Color>
+    -->
+    
+    <!-- Alternate
+    <Color x:Key="NavBackColor">#29202C</Color>
+    <Color x:Key="NavForeColor">#D0DFAD</Color>
+    <Color x:Key="WorkBackColor">#D0DFAD</Color>
+    <Color x:Key="WorkForeColor">#29202C</Color>
+    <Color x:Key="WorkButtonBackColor">#29202C</Color>
+    <Color x:Key="WorkButtonForeColor">#D0DFAD</Color>
+    -->
+
+    <!-- Active theme -->
+    <Color x:Key="NavBackColor">#333</Color>
+    <Color x:Key="NavForeColor">#CCC</Color>
+    <Color x:Key="WorkBackColor">#EEE</Color>
+    <Color x:Key="WorkForeColor">#000</Color>
+    <Color x:Key="WorkButtonBackColor">White</Color>
+    <Color x:Key="WorkButtonForeColor">Black</Color>
+
     <!--
         Global.
     -->
@@ -51,7 +80,7 @@
         Color intensities. Full opacity for titles, less opacity for lower-level content.
     -->
     <sys:Double x:Key="Opacity1">1.0</sys:Double>
-    <sys:Double x:Key="Opacity2">0.7</sys:Double>
+    <sys:Double x:Key="Opacity2">0.8</sys:Double>
     <sys:Double x:Key="Opacity3">0.5</sys:Double>
 
     <!--
@@ -78,9 +107,6 @@
     <!--
         Navigation theme.
     -->
-    <Color x:Key="NavBackColor">#3E0E40</Color>
-    <Color x:Key="NavForeColor">#FFF</Color>
-
     <SolidColorBrush x:Key="NavBackBrush1" Color="{StaticResource NavBackColor}"></SolidColorBrush>
     <SolidColorBrush x:Key="NavForeBrush1" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity1}"></SolidColorBrush>
     <SolidColorBrush x:Key="NavForeBrush2" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
@@ -118,13 +144,12 @@
     <!--
         Workspace theme.
     -->
-    <Color x:Key="WorkBackColor">#EEE</Color>
-    <Color x:Key="WorkForeColor">#000</Color>
-
     <SolidColorBrush x:Key="WorkBackBrush1" Color="{StaticResource WorkBackColor}"></SolidColorBrush>
     <SolidColorBrush x:Key="WorkForeBrush1" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity1}"></SolidColorBrush>
     <SolidColorBrush x:Key="WorkForeBrush2" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
     <SolidColorBrush x:Key="WorkForeBrush3" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity3}"></SolidColorBrush>
+    <SolidColorBrush x:Key="WorkButtonBackColor1" Color="{StaticResource WorkButtonBackColor}"></SolidColorBrush>
+    <SolidColorBrush x:Key="WorkButtonForeColor1" Color="{StaticResource WorkButtonForeColor}"></SolidColorBrush>
 
     <Style x:Key="WorkTitleLabelStyle" TargetType="Label" BasedOn="{StaticResource TitleLabelStyle}">
         <Setter Property="Foreground" Value="{StaticResource WorkForeBrush1}"></Setter>
