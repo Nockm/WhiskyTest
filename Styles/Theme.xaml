@@ -31,7 +31,7 @@
     <!--
         Root
     -->
-    <Thickness x:Key="RootMargin">8</Thickness>
+    <Thickness x:Key="RootMargin">14</Thickness>
     <Style x:Key="RootHeaderContainerStyle" TargetType="Border">
         <Setter Property="Height" Value="85"></Setter>
     </Style>
@@ -46,8 +46,9 @@
     <SolidColorBrush x:Key="NavForeBrush1" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity1}"></SolidColorBrush>
     <SolidColorBrush x:Key="NavForeBrush2" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
     <SolidColorBrush x:Key="NavForeBrush3" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity3}"></SolidColorBrush>
-    
+
     <Style x:Key="NavTitleLabelStyle" TargetType="Label">
+        <Setter Property="Margin" Value="-3,0,0,0"/>
         <Setter Property="FontWeight" Value="Medium"></Setter>
         <Setter Property="FontSize" Value="22"></Setter>
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush1}"></Setter>

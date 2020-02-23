@@ -13,11 +13,9 @@ namespace WhiskyTest.Model
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private string title = "new title";
         private Profile profile;
         private PhraseSet phraseSet;
 
-        public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
         public Profile Profile { get { return profile; } set { profile = value; OnPropertyChanged(); } }
         public PhraseSet PhraseSet { get { return phraseSet; } set { phraseSet = value; OnPropertyChanged(); } }
 
@@ -38,9 +36,11 @@ namespace WhiskyTest.Model
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string title = "New Profile";
+        private string subTitle = "new title";
         private ObservableCollection<Category> categorySet = new ObservableCollection<Category>();
 
         public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
+        public string SubTitle { get { return subTitle; } set { subTitle = value; OnPropertyChanged(); } }
         public ObservableCollection<Category> CategorySet { get { return categorySet; } set { categorySet = value; OnPropertyChanged(); } }
 
         protected void OnPropertyChanged([CallerMemberName] string name = null)

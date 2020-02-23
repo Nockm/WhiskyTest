@@ -18,8 +18,8 @@
             <StackPanel Margin="{StaticResource RootMargin}">
                 <Border Style="{StaticResource RootHeaderContainerStyle}">
                     <StackPanel Orientation="Vertical">
-                        <Label DockPanel.Dock="Top" Content="WhiskyTest" Style="{StaticResource NavTitleLabelStyle}"></Label>
-                        <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource NavSubTitleLabelStyle}"></Label>
+                        <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource NavTitleLabelStyle}"></Label>
+                        <Label DockPanel.Dock="Top" Content="{Binding SubTitle}" Style="{StaticResource NavSubTitleLabelStyle}"></Label>
                     </StackPanel>
                 </Border>
                 <ListBox ItemsSource="{Binding CategorySet}" Style="{StaticResource NavCategorySetListBoxStyle}">
