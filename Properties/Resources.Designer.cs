@@ -61,65 +61,23 @@ namespace WhiskyTest.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap application_view_list {
-            get {
-                object obj = ResourceManager.GetObject("application_view_list", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
         ///&lt;AppModel xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-        ///  &lt;Title&gt;new title&lt;/Title&gt;
         ///  &lt;Profile&gt;
-        ///    &lt;Title&gt;New Profile 1&lt;/Title&gt;
+        ///    &lt;Title&gt;WhiskyText 🥃&lt;/Title&gt;
+        ///    &lt;SubTitle&gt;Shannon&apos;s Phrases&lt;/SubTitle&gt;
         ///    &lt;CategorySet&gt;
         ///      &lt;Category&gt;
-        ///        &lt;Title&gt;New Category 0&lt;/Title&gt;
+        ///        &lt;Title&gt;Medical&lt;/Title&gt;
         ///        &lt;PhraseSets&gt;
         ///          &lt;PhraseSet&gt;
-        ///            &lt;Title&gt;New PhraseSet 0&lt;/Title&gt;
-        ///            &lt;Phrases&gt;
-        ///              &lt;Phrase&gt;
-        ///                &lt;Left&gt;New Left 0&lt;/Left&gt;
-        ///                &lt;Right&gt;New Right [rest of string was truncated]&quot;;.
+        ///            &lt;Title&gt;Cardiology&lt;/Title&gt;
+        ///            &lt;Description&gt;Disorders of the heart as well as some parts of the circulatory system.&lt;/Description&gt;
+        ///     [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AppModel {
             get {
                 return ResourceManager.GetString("AppModel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap comment_add {
-            get {
-                object obj = ResourceManager.GetObject("comment_add", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap comment_delete {
-            get {
-                object obj = ResourceManager.GetObject("comment_delete", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap comments_add {
-            get {
-                object obj = ResourceManager.GetObject("comments_add", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

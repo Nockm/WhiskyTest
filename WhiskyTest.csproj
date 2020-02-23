@@ -133,31 +133,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\comment_add.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\comment_delete.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\comments_add.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="wine_pairings.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="glass_of_wine_full.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\application_view_list.png" />
+    <Resource Include="SampleData\AppModel.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="SampleData\AppModel.xml" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
