@@ -15,8 +15,8 @@
             </ResourceDictionary>
         </Border.Resources>
         <Border Background="{StaticResource NavBackBrush1}">
-            <StackPanel Margin="{StaticResource RootMargin}">
-                <Border Style="{StaticResource RootHeaderContainerStyle}">
+            <StackPanel Margin="{StaticResource PaneMargin}">
+                <Border Style="{StaticResource HeaderBorderStyle}">
                     <StackPanel Orientation="Vertical">
                         <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource NavTitleLabelStyle}"></Label>
                         <Label DockPanel.Dock="Top" Content="{Binding SubTitle}" Style="{StaticResource NavSubTitleLabelStyle}"></Label>

@@ -11,10 +11,26 @@
             <ResourceDictionary Source="pack://application:,,,/Styles/Theme.xaml"/>
         </Border.Resources>
         <Border Background="{StaticResource WorkBackBrush1}" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <StackPanel Margin="{StaticResource RootMargin}">
-                <Border Style="{StaticResource RootHeaderContainerStyle}">
-                    <StackPanel Orientation="Vertical">
-                        <Label DockPanel.Dock="Top" Content="{Binding Title}" Style="{StaticResource WorkTitleLabelStyle}"></Label>
+            <StackPanel Margin="{StaticResource PaneMargin}">
+                <Border Style="{StaticResource HeaderBorderStyle}">
+                    <StackPanel>
+                        <Border>
+                            <Border.Resources>
+                                <Style TargetType="Button" BasedOn="{StaticResource ControlStyle}">
+                                    <Setter Property="Margin" Value="20,0,0,0"></Setter>
+                                </Style>
+                            </Border.Resources>
+                            <DockPanel>
+                                <Label DockPanel.Dock="Left" Content="{Binding Title}" Style="{StaticResource WorkTitleLabelStyle}"></Label>
+                                <Button DockPanel.Dock="Right">Delete</Button>
+                                <Button DockPanel.Dock="Right">Duplicate</Button>
+                                <Button DockPanel.Dock="Right">Add</Button>
+                                <Border></Border>
+                            </DockPanel>
+                        </Border>
+                        <Border>
+                            <Label Style="{StaticResource WorkSubTitleLabelStyle}">This is a sublabel.</Label>
+                        </Border>
                     </StackPanel>
                 </Border>
                 <ListView ItemsSource="{Binding Phrases}" Style="{StaticResource CleanListBoxStyle}">
@@ -57,7 +73,7 @@
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <DockPanel Grid.Column="0" HorizontalAlignment="Right">
-                                            <TextBox Text="{Binding Left}" BorderThickness="0"></TextBox>
+                                            <TextBox Text="{Binding Left}"></TextBox>
                                         </DockPanel>
                                         <Label Grid.Column="1">=</Label>
                                         <DockPanel Grid.Column="2" HorizontalAlignment="Left">

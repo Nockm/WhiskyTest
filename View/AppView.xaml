@@ -14,17 +14,19 @@
                 </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>
         </Border.Resources>
-        <Grid>
+        <DockPanel LastChildFill="True">
             <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200" />
-                    <ColumnDefinition Width="10" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <local:ProfileView DataContext="{Binding Profile}" Background="Red"></local:ProfileView>
-                <GridSplitter Grid.Column="1" Width="10" HorizontalAlignment="Stretch" Background="{StaticResource NavBackBrush1}"/>
-                <local:PhraseSetView DataContext="{Binding PhraseSet}" Grid.Column="2"></local:PhraseSetView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <local:ProfileView DataContext="{Binding Profile}" Background="Red"></local:ProfileView>
+                    <GridSplitter Grid.Column="1" Width="10" HorizontalAlignment="Stretch" Background="{StaticResource NavBackBrush1}"/>
+                    <local:PhraseSetView DataContext="{Binding PhraseSet}" Grid.Column="2"></local:PhraseSetView>
+                </Grid>
             </Grid>
-        </Grid>
+        </DockPanel>
     </Border>
 </UserControl>
