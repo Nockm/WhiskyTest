@@ -80,4 +80,28 @@
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush3}"></Setter>
     </Style>
+
+    <!--
+        Workspace theme.
+    -->
+    <Color x:Key="WorkBackColor">#EEE</Color>
+    <Color x:Key="WorkForeColor">#000</Color>
+
+    <SolidColorBrush x:Key="WorkBackBrush1" Color="{StaticResource WorkBackColor}"></SolidColorBrush>
+    <SolidColorBrush x:Key="WorkForeBrush1" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity1}"></SolidColorBrush>
+    <SolidColorBrush x:Key="WorkForeBrush2" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
+    <SolidColorBrush x:Key="WorkForeBrush3" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity3}"></SolidColorBrush>
+
+    <Style x:Key="WorkTitleLabelStyle" TargetType="Label">
+        <Setter Property="Margin" Value="-3,0,0,0"/>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Setter Property="FontSize" Value="22"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource WorkForeBrush1}"></Setter>
+        <Setter Property="HorizontalContentAlignment" Value="Right"></Setter>
+    </Style>
+
+    <Style x:Key="WorkSubTitleLabelStyle" TargetType="Label">
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Setter Property="Foreground" Value="{StaticResource WorkForeBrush3}"></Setter>
+    </Style>
 </ResourceDictionary>
