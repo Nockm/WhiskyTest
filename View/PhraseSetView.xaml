@@ -16,21 +16,95 @@
                     <StackPanel>
                         <Border>
                             <Border.Resources>
-                                <Style TargetType="Button" BasedOn="{StaticResource ControlStyle}">
-                                    <Setter Property="Margin" Value="20,0,0,0"></Setter>
+                                <Style x:Key="ButtonBorder" TargetType="Border">
+                                    <Setter Property="DockPanel.Dock" Value="Right"></Setter>
+                                    <Setter Property="CornerRadius" Value="5"></Setter>
+                                    <Setter Property="Margin" Value="10,0,0,0"></Setter>
+                                    <Setter Property="BorderThickness" Value="0"></Setter>
+                                    <Setter Property="BorderBrush" Value="Black"></Setter>
+                                </Style>
+                                <Style x:Key="ButtonButton" TargetType="Button" BasedOn="{StaticResource ControlStyle}">
+                                    <Setter Property="Background" Value="Transparent"></Setter>
+                                    <Setter Property="Foreground" Value="{StaticResource NavForeBrush1}"></Setter>
+                                    <Setter Property="BorderThickness" Value="0"></Setter>
+                                </Style>
+                                <Style x:Key="ImageBorder" TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="4"></Setter>
+                                    <Setter Property="Width" Value="40"></Setter>
+                                    <Setter Property="Padding" Value="0,2,0,2"></Setter>
+                                    <Setter Property="Background" Value="White"></Setter>
+                                </Style>
+                                <Style x:Key="ImageLabel" TargetType="Label">
+                                    <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                                    <Setter Property="Padding" Value="0"></Setter>
+                                </Style>
+                                <Style x:Key="ButtonLabel" TargetType="Label" BasedOn="{StaticResource ControlStyle}">
+                                    <Setter Property="Background" Value="Transparent"></Setter>
+                                    <Setter Property="Foreground" Value="{StaticResource WorkForeBrush2}"></Setter>
+                                    <Setter Property="BorderThickness" Value="0"></Setter>
+                                    <Setter Property="FontSize" Value="11"></Setter>
+                                    <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                                    <Setter Property="Padding" Value="0"></Setter>
+                                    <Setter Property="Padding" Value="0,2,0,0"></Setter>
                                 </Style>
                             </Border.Resources>
                             <DockPanel>
                                 <Label DockPanel.Dock="Left" Content="{Binding Title}" Style="{StaticResource WorkTitleLabelStyle}"></Label>
-                                <Button DockPanel.Dock="Right">Delete</Button>
-                                <Button DockPanel.Dock="Right">Duplicate</Button>
-                                <Button DockPanel.Dock="Right">Add</Button>
+                                <Border 
+                                    DockPanel.Dock="Left" 
+                                    Background="Green" 
+                                    CornerRadius="6" 
+                                    Margin="3,-2,3,0" 
+                                    Height="26"
+                                    Opacity="0.4"
+                                >
+                                    <Label 
+                                        DockPanel.Dock="Right" 
+                                        Style="{StaticResource WorkSubTitleLabelStyle}" 
+                                        FontWeight="Medium" 
+                                        Foreground="{StaticResource NavForeBrush1}" 
+                                        Content="{Binding Path=Phrases.Count}" 
+                                        ContentStringFormat="{}🗨️ {0}"
+                                        VerticalContentAlignment="Center"
+                                />
+                                </Border>
+                                <Border Style="{StaticResource ButtonBorder}">
+                                    <Button Style="{StaticResource ButtonButton}">
+                                        <StackPanel>
+                                            <Border Style="{StaticResource ImageBorder}">
+                                                <Label Style="{StaticResource ImageLabel}">+</Label>
+                                            </Border>
+                                            <Label Style="{StaticResource ButtonLabel}">Add</Label>
+                                        </StackPanel>
+                                    </Button>
+                                </Border>
+                                <Border Style="{StaticResource ButtonBorder}">
+                                    <Button Style="{StaticResource ButtonButton}">
+                                        <StackPanel>
+                                            <Border Style="{StaticResource ImageBorder}">
+                                                <Label Style="{StaticResource ImageLabel}">📋</Label>
+                                            </Border>
+                                            <Label Style="{StaticResource ButtonLabel}">Duplicate</Label>
+                                        </StackPanel>
+                                    </Button>
+                                </Border>
+                                <Border Style="{StaticResource ButtonBorder}">
+                                    <Button Style="{StaticResource ButtonButton}">
+                                        <StackPanel>
+                                            <Border Style="{StaticResource ImageBorder}">
+                                                <Label Style="{StaticResource ImageLabel}">🗑</Label>
+                                            </Border>
+                                            <Label Style="{StaticResource ButtonLabel}">Delete</Label>
+                                        </StackPanel>
+                                    </Button>
+                                </Border>
                                 <Border></Border>
                             </DockPanel>
                         </Border>
-                        <Border>
-                            <Label Style="{StaticResource WorkSubTitleLabelStyle}">This is a sublabel.</Label>
-                        </Border>
+                        <DockPanel HorizontalAlignment="Stretch">
+                            <Label DockPanel.Dock="Left" Style="{StaticResource WorkSubTitleLabelStyle}" Content="{Binding Path=Description}" ContentStringFormat="{}{0}"/>
+                            <Border></Border>
+                        </DockPanel>
                     </StackPanel>
                 </Border>
                 <ListView ItemsSource="{Binding Phrases}" Style="{StaticResource CleanListBoxStyle}">
@@ -38,17 +112,12 @@
                         <DataTemplate>
                             <DockPanel>
                                 <DockPanel.Resources>
-                                    <Style TargetType="Border">
-                                        <Setter Property="Margin" Value="0,0,10,0"></Setter>
-                                        <Setter Property="Padding" Value="0,0,0,0"></Setter>
-                                        <Setter Property="BorderBrush" Value="{StaticResource WorkBackBrush1}"></Setter>
-                                    </Style>
                                     <Style TargetType="Button">
                                         <Setter Property="Padding" Value="4"></Setter>
                                         <Setter Property="BorderBrush" Value="Transparent"></Setter>
                                     </Style>
                                     <Style TargetType="TextBox">
-                                        <Setter Property="FontWeight" Value="Medium"></Setter>
+                                        <Setter Property="FontWeight" Value="Normal"></Setter>
                                         <Setter Property="BorderThickness" Value="0"></Setter>
                                         <Setter Property="BorderBrush" Value="Transparent"></Setter>
                                         <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
@@ -58,7 +127,25 @@
                                     </Style>
                                 </DockPanel.Resources>
                                 <Grid>
-                                    <StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                        <StackPanel.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="Background" Value="Black"></Setter>
+                                                <Setter Property="Margin" Value="0,0,10,0"></Setter>
+                                                <Setter Property="Padding" Value="0,0,0,0"></Setter>
+                                                <Setter Property="CornerRadius" Value="4"></Setter>
+                                                <Setter Property="BorderThickness" Value="4"></Setter>
+                                                <Setter Property="BorderBrush" Value="Black"></Setter>
+                                                <Setter Property="Opacity" Value="0.3"></Setter>
+                                            </Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="BorderThickness" Value="0"></Setter>
+                                                <Setter Property="Background" Value="Black"></Setter>
+                                                <Setter Property="Foreground" Value="White"></Setter>
+                                                <Setter Property="FontSize" Value="11"></Setter>
+                                                <Setter Property="Padding" Value="2,0,2,0"></Setter>
+                                            </Style>
+                                        </StackPanel.Resources>
                                         <Border>
                                             <Button>Aa</Button>
                                         </Border>
