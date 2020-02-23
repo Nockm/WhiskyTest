@@ -3,18 +3,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
    >
-    <!-- 
+    <!--
         Color themes.
     -->
     <!-- Normal
-    <Color x:Key="NavBackColor">#333</Color>
-    <Color x:Key="NavForeColor">#CCC</Color>
+    <Color x:Key="NavBackColor">#3E0E40</Color>
+    <Color x:Key="NavForeColor">#FFF</Color>
     <Color x:Key="WorkBackColor">#EEE</Color>
     <Color x:Key="WorkForeColor">#000</Color>
     <Color x:Key="WorkButtonBackColor">White</Color>
     <Color x:Key="WorkButtonForeColor">Black</Color>
     -->
-    
+
     <!-- Alternate
     <Color x:Key="NavBackColor">#29202C</Color>
     <Color x:Key="NavForeColor">#D0DFAD</Color>
@@ -25,8 +25,8 @@
     -->
 
     <!-- Active theme -->
-    <Color x:Key="NavBackColor">#333</Color>
-    <Color x:Key="NavForeColor">#CCC</Color>
+    <Color x:Key="NavBackColor">#3E0E40</Color>
+    <Color x:Key="NavForeColor">#FFF</Color>
     <Color x:Key="WorkBackColor">#EEE</Color>
     <Color x:Key="WorkForeColor">#000</Color>
     <Color x:Key="WorkButtonBackColor">White</Color>
