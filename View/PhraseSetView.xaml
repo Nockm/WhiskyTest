@@ -14,73 +14,69 @@
             <StackPanel Margin="{StaticResource PaneMargin}">
                 <Border Style="{StaticResource HeaderBorderStyle}">
                     <Grid>
+                        <!--
+                            ========================================================
+                            Toolbar Buttons
+                            ========================================================
+                        -->
                         <Border>
                             <Border.Resources>
-                                <Style x:Key="ButtonBorder" TargetType="Border">
-                                    <Setter Property="DockPanel.Dock" Value="Right"></Setter>
-                                    <Setter Property="CornerRadius" Value="5"></Setter>
-                                    <Setter Property="Margin" Value="10,0,0,0"></Setter>
-                                </Style>
                                 <Style x:Key="ButtonButton" TargetType="Button" BasedOn="{StaticResource ControlStyle}">
+                                    <Setter Property="DockPanel.Dock" Value="Right"></Setter>
+                                    <Setter Property="Margin" Value="10,0,0,0"></Setter>
                                     <Setter Property="Background" Value="Transparent"></Setter>
                                     <Setter Property="BorderThickness" Value="0"></Setter>
                                 </Style>
                                 <Style x:Key="ImageBorder" TargetType="Border">
                                     <Setter Property="CornerRadius" Value="4"></Setter>
-                                    <Setter Property="Padding" Value="0,2,0,2"></Setter>
+                                    <Setter Property="Padding" Value="6,3,6,3"></Setter>
                                     <Setter Property="Background" Value="{StaticResource WorkButtonBackColor1}"></Setter>
                                 </Style>
                                 <Style x:Key="ImageLabel" TargetType="Label">
                                     <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                                     <Setter Property="FontSize" Value="16"></Setter>
-                                    <Setter Property="Padding" Value="6,3,6,3"></Setter>
                                     <Setter Property="Foreground" Value="{StaticResource WorkButtonForeColor1}"></Setter>
                                 </Style>
                                 <Style x:Key="ButtonLabel" TargetType="Label" BasedOn="{StaticResource ControlStyle}">
                                     <Setter Property="MinWidth" Value="60"></Setter>
-                                    <Setter Property="Background" Value="Transparent"></Setter>
                                     <Setter Property="Foreground" Value="{StaticResource WorkForeBrush2}"></Setter>
-                                    <Setter Property="BorderThickness" Value="0"></Setter>
                                     <Setter Property="FontSize" Value="11"></Setter>
                                     <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
-                                    <Setter Property="Padding" Value="0"></Setter>
-                                    <Setter Property="Padding" Value="0,2,0,0"></Setter>
                                 </Style>
                             </Border.Resources>
                             <DockPanel VerticalAlignment="Top">
-                                <Border Style="{StaticResource ButtonBorder}">
-                                    <Button Style="{StaticResource ButtonButton}">
-                                        <StackPanel>
-                                            <Border Style="{StaticResource ImageBorder}">
-                                                <Label Style="{StaticResource ImageLabel}">+</Label>
-                                            </Border>
-                                            <Label Style="{StaticResource ButtonLabel}">Add</Label>
-                                        </StackPanel>
-                                    </Button>
-                                </Border>
-                                <Border Style="{StaticResource ButtonBorder}">
-                                    <Button Style="{StaticResource ButtonButton}">
-                                        <StackPanel>
-                                            <Border Style="{StaticResource ImageBorder}">
-                                                <Label Style="{StaticResource ImageLabel}">📋</Label>
-                                            </Border>
-                                            <Label Style="{StaticResource ButtonLabel}">Duplicate</Label>
-                                        </StackPanel>
-                                    </Button>
-                                </Border>
-                                <Border Style="{StaticResource ButtonBorder}">
-                                    <Button Style="{StaticResource ButtonButton}">
-                                        <StackPanel>
-                                            <Border Style="{StaticResource ImageBorder}">
-                                                <Label Style="{StaticResource ImageLabel}">🗑</Label>
-                                            </Border>
-                                            <Label Style="{StaticResource ButtonLabel}">Delete</Label>
-                                        </StackPanel>
-                                    </Button>
-                                </Border>
+                                <Button Style="{StaticResource ButtonButton}">
+                                    <StackPanel>
+                                        <Border Style="{StaticResource ImageBorder}">
+                                            <Label Style="{StaticResource ImageLabel}">+</Label>
+                                        </Border>
+                                        <Label Style="{StaticResource ButtonLabel}">Add</Label>
+                                    </StackPanel>
+                                </Button>
+                                <Button Style="{StaticResource ButtonButton}">
+                                    <StackPanel>
+                                        <Border Style="{StaticResource ImageBorder}">
+                                            <Label Style="{StaticResource ImageLabel}">📋</Label>
+                                        </Border>
+                                        <Label Style="{StaticResource ButtonLabel}">Duplicate</Label>
+                                    </StackPanel>
+                                </Button>
+                                <Button Style="{StaticResource ButtonButton}">
+                                    <StackPanel>
+                                        <Border Style="{StaticResource ImageBorder}">
+                                            <Label Style="{StaticResource ImageLabel}">🗑</Label>
+                                        </Border>
+                                        <Label Style="{StaticResource ButtonLabel}">Delete</Label>
+                                    </StackPanel>
+                                </Button>
                                 <Border></Border>
                             </DockPanel>
                         </Border>
+                        <!--
+                            ========================================================
+                            Header
+                            ========================================================
+                        -->
                         <StackPanel>
                             <Border>
                                 <Border.Resources>
@@ -117,6 +113,11 @@
                         </StackPanel>
                     </Grid>
                 </Border>
+                <!--
+                    ========================================================
+                    Phrases
+                    ========================================================
+                -->
                 <ListView ItemsSource="{Binding Phrases}" Style="{StaticResource CleanListBoxStyle}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
