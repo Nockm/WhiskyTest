@@ -1,29 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WhiskyTest.Model
 {
     public class AppModel : INotifyPropertyChanged
     {
+        // INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
 
+        // Members
         private Profile profile;
         private PhraseSet phraseSet;
 
+        // Properties
         public Profile Profile { get { return profile; } set { profile = value; OnPropertyChanged(); } }
         public PhraseSet PhraseSet { get { return phraseSet; } set { phraseSet = value; OnPropertyChanged(); } }
 
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-
+        // Example
         public AppModel()
         {
             Profile = Profile.GenerateExample(1);
@@ -33,21 +29,21 @@ namespace WhiskyTest.Model
 
     public class Profile
     {
+        // INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
 
+        // Members
         private string title = "New Profile";
         private string subTitle = "new title";
         private ObservableCollection<Category> categorySet = new ObservableCollection<Category>();
 
+        // Properties
         public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
         public string SubTitle { get { return subTitle; } set { subTitle = value; OnPropertyChanged(); } }
         public ObservableCollection<Category> CategorySet { get { return categorySet; } set { categorySet = value; OnPropertyChanged(); } }
 
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-
+        // Example
         public static Profile GenerateExample(int i)
         {
             Profile profile = new Profile();
@@ -59,18 +55,21 @@ namespace WhiskyTest.Model
 
     public class Category
     {
-        private string title = "New Category";
+        // INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
 
-        public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
+        // Members
+        private string title = "New Category";
+        private string subTitle = "New Category Description";
         private ObservableCollection<PhraseSet> phraseSets = new ObservableCollection<PhraseSet>();
 
+        // Properties
+        public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
+        public string SubTitle { get { return subTitle; } set { subTitle = value; OnPropertyChanged(); } }
         public ObservableCollection<PhraseSet> PhraseSets { get { return phraseSets; } set { phraseSets = value; OnPropertyChanged(); } }
 
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
+        // Example
         public static Category GenerateExample(int i)
         {
             Category category = new Category();
@@ -84,19 +83,21 @@ namespace WhiskyTest.Model
 
     public class PhraseSet : INotifyPropertyChanged
     {
+        // INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
 
+        // Members
         private string title = "New PhraseSet";
+        private string description = "New Description";
         private ObservableCollection<Phrase> phrases = new ObservableCollection<Phrase>();
 
+        // Properties
         public string Title { get { return title; } set { title = value; OnPropertyChanged(); } }
+        public string Description { get { return description; } set { description = value; OnPropertyChanged(); } }
         public ObservableCollection<Phrase> Phrases { get { return phrases; } set { phrases = value; OnPropertyChanged(); } }
 
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-
+        // Example
         public static PhraseSet GenerateExample(int i)
         {
             PhraseSet sheet = new PhraseSet();
@@ -108,19 +109,19 @@ namespace WhiskyTest.Model
 
     public class Phrase : INotifyPropertyChanged
     {
+        // INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null) { PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name)); }
 
+        // Members
         private string left = "New Left";
         private string right = "New Right";
 
+        // Properties
         public string Left { get { return left; } set { left = value; OnPropertyChanged(); } }
         public string Right { get { return right; } set { right = value; OnPropertyChanged(); } }
 
-        protected void OnPropertyChanged([CallerMemberName] string name = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
-
+        // Example
         public static Phrase GenerateExample(int i)
         {
             return new Phrase() { Left = "New Left " + i, Right = "New Right " + i };
