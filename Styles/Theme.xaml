@@ -4,16 +4,33 @@
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
    >
     <!--
+        Global.
+    -->
+    <Style x:Key="ControlStyle" TargetType="Control">
+        <Setter Property="FontFamily" Value="Helvetica"/>
+        <Setter Property="FontWeight" Value="Normal"></Setter>
+        <Setter Property="FontSize" Value="14"></Setter>
+    </Style>
+
+    <!--
+        Title.
+    -->
+    <Style x:Key="TitleLabelStyle" TargetType="Label" BasedOn="{StaticResource ControlStyle}">
+        <Setter Property="Margin" Value="-3,0,0,0"/>
+        <Setter Property="FontSize" Value="23"></Setter>
+    </Style>
+
+    <!--
         Remove unwanted default ListBox styling.
     -->
-    <Style x:Key="CleanListBoxStyle"  TargetType="ListBox">
+    <Style x:Key="CleanListBoxStyle"  TargetType="ListBox" BasedOn="{StaticResource ControlStyle}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="0"/>
         <Setter Property="Margin" Value="0"/>
     </Style>
-    <Style x:Key="CleanListBoxItemStyle"  TargetType="ListBoxItem">
+    <Style x:Key="CleanListBoxItemStyle"  TargetType="ListBoxItem" BasedOn="{StaticResource ControlStyle}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="0"/>
@@ -47,15 +64,12 @@
     <SolidColorBrush x:Key="NavForeBrush2" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
     <SolidColorBrush x:Key="NavForeBrush3" Color="{StaticResource NavForeColor}" Opacity="{StaticResource Opacity3}"></SolidColorBrush>
 
-    <Style x:Key="NavTitleLabelStyle" TargetType="Label">
-        <Setter Property="Margin" Value="-3,0,0,0"/>
-        <Setter Property="FontWeight" Value="Medium"></Setter>
-        <Setter Property="FontSize" Value="22"></Setter>
+    <Style x:Key="NavTitleLabelStyle" TargetType="Label" BasedOn="{StaticResource TitleLabelStyle}">
+        <Setter Property="FontWeight" Value="SemiBold"></Setter>
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush1}"></Setter>
     </Style>
 
-    <Style x:Key="NavSubTitleLabelStyle" TargetType="Label">
-        <Setter Property="FontWeight" Value="Medium"></Setter>
+    <Style x:Key="NavSubTitleLabelStyle" TargetType="Label" BasedOn="{StaticResource ControlStyle}">
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush3}"></Setter>
     </Style>
 
@@ -65,7 +79,6 @@
     </Style>
     <Style x:Key="NavCategoryLabelStyle" TargetType="Label">
         <Setter Property="Padding" Value="5,1,0,1"/>
-        <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush2}"></Setter>
     </Style>
 
@@ -77,7 +90,6 @@
     </Style>
     <Style x:Key="NavPhraseSetLabelStyle" TargetType="Label">
         <Setter Property="Padding" Value="5,1,0,1"/>
-        <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="Foreground" Value="{StaticResource NavForeBrush3}"></Setter>
     </Style>
 
@@ -92,16 +104,11 @@
     <SolidColorBrush x:Key="WorkForeBrush2" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity2}"></SolidColorBrush>
     <SolidColorBrush x:Key="WorkForeBrush3" Color="{StaticResource WorkForeColor}" Opacity="{StaticResource Opacity3}"></SolidColorBrush>
 
-    <Style x:Key="WorkTitleLabelStyle" TargetType="Label">
-        <Setter Property="Margin" Value="-3,0,0,0"/>
-        <Setter Property="FontWeight" Value="Medium"></Setter>
-        <Setter Property="FontSize" Value="22"></Setter>
+    <Style x:Key="WorkTitleLabelStyle" TargetType="Label" BasedOn="{StaticResource TitleLabelStyle}">
         <Setter Property="Foreground" Value="{StaticResource WorkForeBrush1}"></Setter>
-        <Setter Property="HorizontalContentAlignment" Value="Right"></Setter>
     </Style>
 
-    <Style x:Key="WorkSubTitleLabelStyle" TargetType="Label">
-        <Setter Property="FontWeight" Value="Medium"></Setter>
+    <Style x:Key="WorkSubTitleLabelStyle" TargetType="Label" BasedOn="{StaticResource ControlStyle}">
         <Setter Property="Foreground" Value="{StaticResource WorkForeBrush3}"></Setter>
     </Style>
 </ResourceDictionary>

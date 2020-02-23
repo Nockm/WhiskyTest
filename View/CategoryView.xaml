@@ -25,7 +25,7 @@
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" MouseDown="Label_MouseDown">
                             <!-- <Image Source="/Resources/application_view_list.png"></Image> -->
-                            <Label Content="•" Style="{StaticResource NavPhraseSetLabelStyle}"></Label>
+                            <Label Content="•" Style="{StaticResource NavPhraseSetLabelStyle}" Opacity="0.5"></Label>
                             <Label Content="{Binding Title}" Style="{StaticResource NavPhraseSetLabelStyle}"></Label>
                         </StackPanel>
                     </DataTemplate>
