@@ -1,684 +1,314 @@
 <?xml version="1.0" encoding="utf-16"?>
 <AppModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Title>new title</Title>
   <Profile>
-    <Title>New Profile 1</Title>
+    <Title>🥃 WhiskyNom</Title>
+    <SubTitle>Shannon's Phrases</SubTitle>
     <CategorySet>
       <Category>
-        <Title>New Category 0</Title>
+        <Title>Medical</Title>
         <PhraseSets>
           <PhraseSet>
-            <Title>New PhraseSet 0</Title>
+            <Title>Cardiology</Title>
             <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
+              <Phrase><Left>Anem</Left><Right>Anemia</Right></Phrase>
+              <Phrase><Left>Aneu</Left><Right>Aneurysm</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angina</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angina pectoris</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angioplasty</Right></Phrase>
+              <Phrase><Left>Anti</Left><Right>Antihypertensive</Right></Phrase>
+              <Phrase><Left>Anti</Left><Right>Antithrombotic</Right></Phrase>
+              <Phrase><Left>Arrh</Left><Right>Arrhythmia</Right></Phrase>
+              <Phrase><Left>Athe</Left><Right>Atherosclerosis</Right></Phrase>
+              <Phrase><Left>Bloo</Left><Right>Blood clot</Right></Phrase>
+              <Phrase><Left>Bloo</Left><Right>Blood pressure</Right></Phrase>
+              <Phrase><Left>Body</Left><Right>Body mass index (BMI)</Right></Phrase>
+              <Phrase><Left>Brad</Left><Right>Bradycardia</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiomyopathy</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiomyopathy</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiovascular</Right></Phrase>
+              <Phrase><Left>Caro</Left><Right>Carotid endarterectomy</Right></Phrase>
+              <Phrase><Left>Cere</Left><Right>Cerebrovascular</Right></Phrase>
+              <Phrase><Left>Cyan</Left><Right>Cyanosis</Right></Phrase>
+              <Phrase><Left>Dias</Left><Right>Diastole</Right></Phrase>
+              <Phrase><Left>Dila</Left><Right>Dilatation</Right></Phrase>
+              <Phrase><Left>Dysp</Left><Right>Dyspnea</Right></Phrase>
+              <Phrase><Left>Hype</Left><Right>Hypertension</Right></Phrase>
+              <Phrase><Left>Insu</Left><Right>Insufficiency</Right></Phrase>
+              <Phrase><Left>Isch</Left><Right>Ischemia</Right></Phrase>
+              <Phrase><Left>Prol</Left><Right>Prolapse</Right></Phrase>
+              <Phrase><Left>Regu</Left><Right>Regurgitation</Right></Phrase>
+              <Phrase><Left>Sten</Left><Right>Stenosis</Right></Phrase>
+              <Phrase><Left>Sync</Left><Right>Syncope</Right></Phrase>
+              <Phrase><Left>Syst</Left><Right>Systole</Right></Phrase>
+              <Phrase><Left>Tach</Left><Right>Tachycardia</Right></Phrase>
             </Phrases>
           </PhraseSet>
           <PhraseSet>
-            <Title>New PhraseSet 1</Title>
+            <Title>Dermatology</Title>
             <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
+              <Phrase><Left>Acra</Left><Right>Acral</Right></Phrase>
+              <Phrase><Left>Blas</Left><Right>Blaschko lines</Right></Phrase>
+              <Phrase><Left>Derm</Left><Right>Dermatomal</Right></Phrase>
+              <Phrase><Left>Exte</Left><Right>Extensor</Right></Phrase>
+              <Phrase><Left>Flex</Left><Right>Flexural</Right></Phrase>
+              <Phrase><Left>Foll</Left><Right>Follicular</Right></Phrase>
+              <Phrase><Left>Gene</Left><Right>Generalised</Right></Phrase>
+              <Phrase><Left>Herp</Left><Right>Herpetiform</Right></Phrase>
+              <Phrase><Left>Koeb</Left><Right>Koebnerised</Right></Phrase>
+              <Phrase><Left>Phot</Left><Right>Photosensitive</Right></Phrase>
+              <Phrase><Left>Head</Left><Right>Head and neck</Right></Phrase>
+              <Phrase><Left>Back</Left><Right>Backs of hands</Right></Phrase>
+              <Phrase><Left>Fore</Left><Right>Forearms</Right></Phrase>
+              <Phrase><Left>Feet</Left><Right>Feet</Right></Phrase>
+              <Phrase><Left>Lowe</Left><Right>Lower legs</Right></Phrase>
+              <Phrase><Left>Trun</Left><Right>Trunk</Right></Phrase>
+              <Phrase><Left>Pres</Left><Right>Pressure areas</Right></Phrase>
+              <Phrase><Left>Tops</Left><Right>Tops of the ears when sleeping</Right></Phrase>
+              <Phrase><Left>Butt</Left><Right>Buttocks when sitting</Right></Phrase>
+              <Phrase><Left>Heel</Left><Right>Heels when lying</Right></Phrase>
+              <Phrase><Left>Sebo</Left><Right>Seborrhoeic</Right></Phrase>
+              <Phrase><Left>Symm</Left><Right>Symmetrical</Right></Phrase>
+              <Phrase><Left>Trun</Left><Right>Truncal</Right></Phrase>
+              <Phrase><Left>Unil</Left><Right>Unilateral</Right></Phrase>
             </Phrases>
           </PhraseSet>
           <PhraseSet>
-            <Title>New PhraseSet 2</Title>
+            <Title>Respiatory</Title>
             <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
+              <Phrase><Left>HEPA</Left><Right>(HEPA) high-efficiency particulate air filter</Right></Phrase>
+              <Phrase><Left>Hig</Left><Right>High blood pressure</Right></Phrase>
+              <Phrase><Left>His</Left><Right>Histamine</Right></Phrase>
+              <Phrase><Left>Hol</Left><Right>Holding chamber</Right></Phrase>
+              <Phrase><Left>Hom</Left><Right>Home care company</Right></Phrase>
+              <Phrase><Left>Hum</Left><Right>Humidification</Right></Phrase>
+              <Phrase><Left>Hyp</Left><Right>Hyperventilation</Right></Phrase>
+              <Phrase><Left>Hyp</Left><Right>Hypoxia</Right></Phrase>
+              <Phrase><Left>Imm</Left><Right>Immune system</Right></Phrase>
+              <Phrase><Left>IAQ</Left><Right>IAQ</Right></Phrase>
+              <Phrase><Left>Inc</Left><Right>Incentive spirometer</Right></Phrase>
+              <Phrase><Left>Ind</Left><Right>Indication</Right></Phrase>
+              <Phrase><Left>Inf</Left><Right>Inflammation</Right></Phrase>
+              <Phrase><Left>Inh</Left><Right>Inhaler</Right></Phrase>
+              <Phrase><Left>Ins</Left><Right>Inspiration</Right></Phrase>
+              <Phrase><Left>Int</Left><Right>Intubation</Right></Phrase>
+              <Phrase><Left>I/E</Left><Right>I/E ratio</Right></Phrase>
+              <Phrase><Left>Irr</Left><Right>Irritant</Right></Phrase>
+              <Phrase><Left>Leu</Left><Right>Leukotriene modifier</Right></Phrase>
+              <Phrase><Left>Liv</Left><Right>Living will</Right></Phrase>
+              <Phrase><Left>Lun</Left><Right>Lung volume</Right></Phrase>
+              <Phrase><Left>Lun</Left><Right>Lung volume reduction surgery</Right></Phrase>
+              <Phrase><Left>Lun</Left><Right>Lung transplantation</Right></Phrase>
+              <Phrase><Left>Max</Left><Right>Maximal oxygen uptake</Right></Phrase>
+              <Phrase><Left>Med</Left><Right>Medical history</Right></Phrase>
+              <Phrase><Left>Med</Left><Right>Medical referral</Right></Phrase>
+              <Phrase><Left>Met</Left><Right>Metabolism</Right></Phrase>
+              <Phrase><Left>Met</Left><Right>Metered dose inhaler (MDI)</Right></Phrase>
+              <Phrase><Left>Mon</Left><Right>Monitoring</Right></Phrase>
+              <Phrase><Left>Muc</Left><Right>Mucolytic agent</Right></Phrase>
+              <Phrase><Left>Muc</Left><Right>Mucus</Right></Phrase>
+              <Phrase><Left>Muc</Left><Right>Mucus clearing device</Right></Phrase>
+              <Phrase><Left>Nas</Left><Right>Nasal cannula</Right></Phrase>
+              <Phrase><Left>Nas</Left><Right>Nasal spray</Right></Phrase>
+              <Phrase><Left>Neb</Left><Right>Nebulizer</Right></Phrase>
+              <Phrase><Left>Non</Left><Right>Non-steroidal</Right></Phrase>
+              <Phrase><Left>Ope</Left><Right>Open mouth technique</Right></Phrase>
+              <Phrase><Left>Ort</Left><Right>Orthopnea</Right></Phrase>
+              <Phrase><Left>Oxy</Left><Right>Oxygen</Right></Phrase>
+              <Phrase><Left>Oxy</Left><Right>Oxygen, compressed</Right></Phrase>
+              <Phrase><Left>Oxy</Left><Right>Oxygen, liquid</Right></Phrase>
+              <Phrase><Left>Oxy</Left><Right>Oxygen concentrator</Right></Phrase>
+              <Phrase><Left>PEP</Left><Right>PEP</Right></Phrase>
+              <Phrase><Left>Pea</Left><Right>Peak expiratory flow rate</Right></Phrase>
+              <Phrase><Left>Per</Left><Right>Personal best peak expiratory flow (PEF)</Right></Phrase>
+              <Phrase><Left>Pha</Left><Right>Pharynx</Right></Phrase>
+              <Phrase><Left>Pne</Left><Right>Pneumonia</Right></Phrase>
+              <Phrase><Left>Pol</Left><Right>Pollen</Right></Phrase>
+              <Phrase><Left>Pos</Left><Right>Positive expiratory therapy valve</Right></Phrase>
+              <Phrase><Left>Pos</Left><Right>Postural drainage</Right></Phrase>
+              <Phrase><Left>Pro</Left><Right>Productive cough</Right></Phrase>
+              <Phrase><Left>Puf</Left><Right>Puffer</Right></Phrase>
+              <Phrase><Left>Pul</Left><Right>Pulmonary function tests (PFTS)</Right></Phrase>
+              <Phrase><Left>Pul</Left><Right>Pulmonary hypertension</Right></Phrase>
+              <Phrase><Left>Pul</Left><Right>Pulmonologist</Right></Phrase>
+              <Phrase><Left>Pul</Left><Right>Pulse oximetry</Right></Phrase>
+              <Phrase><Left>Pur</Left><Right>Pursed lip breathing</Right></Phrase>
+              <Phrase><Left>Rel</Left><Right>Relapse</Right></Phrase>
+              <Phrase><Left>Res</Left><Right>Residual volume</Right></Phrase>
+              <Phrase><Left>Res</Left><Right>Respiration</Right></Phrase>
+              <Phrase><Left>Res</Left><Right>Respiratory failure</Right></Phrase>
+              <Phrase><Left>Res</Left><Right>Respiratory therapist</Right></Phrase>
+              <Phrase><Left>Res</Left><Right>Respiratory therapy department</Right></Phrase>
+              <Phrase><Left>Pul</Left><Right>Pulmonary rehabilitation</Right></Phrase>
+              <Phrase><Left>Sed</Left><Right>Sedentary</Right></Phrase>
+              <Phrase><Left>Sle</Left><Right>Sleep apnea</Right></Phrase>
+              <Phrase><Left>Spa</Left><Right>Spacer</Right></Phrase>
+              <Phrase><Left>Spi</Left><Right>Spirometry</Right></Phrase>
+              <Phrase><Left>Spu</Left><Right>Sputum</Right></Phrase>
+              <Phrase><Left>Ste</Left><Right>Stenting</Right></Phrase>
+              <Phrase><Left>Ste</Left><Right>Steroid</Right></Phrase>
+              <Phrase><Left>Sup</Left><Right>Supplement, nutritional</Right></Phrase>
+              <Phrase><Left>The</Left><Right>Theophylline agents</Right></Phrase>
+              <Phrase><Left>The</Left><Right>TheraPep</Right></Phrase>
+              <Phrase><Left>Tho</Left><Right>Thorax</Right></Phrase>
+              <Phrase><Left>Tid</Left><Right>Tidal volume</Right></Phrase>
+              <Phrase><Left>Tot</Left><Right>Total lung capacity test</Right></Phrase>
+              <Phrase><Left>Tra</Left><Right>Trachea</Right></Phrase>
+              <Phrase><Left>Tra</Left><Right>Tracheostomy</Right></Phrase>
+              <Phrase><Left>Vac</Left><Right>Vaccine</Right></Phrase>
+              <Phrase><Left>Ven</Left><Right>Ventilator</Right></Phrase>
+              <Phrase><Left>Vir</Left><Right>Virus</Right></Phrase>
+              <Phrase><Left>Vit</Left><Right>Vital capacity</Right></Phrase>
+              <Phrase><Left>Whe</Left><Right>Wheezing</Right></Phrase>
             </Phrases>
           </PhraseSet>
           <PhraseSet>
-            <Title>New PhraseSet 3</Title>
+            <Title>Medication</Title>
             <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 4</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-        </PhraseSets>
-      </Category>
-      <Category>
-        <Title>New Category 1</Title>
-        <PhraseSets>
-          <PhraseSet>
-            <Title>New PhraseSet 0</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 1</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 2</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 3</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 4</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-        </PhraseSets>
-      </Category>
-      <Category>
-        <Title>New Category 2</Title>
-        <PhraseSets>
-          <PhraseSet>
-            <Title>New PhraseSet 0</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 1</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 2</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 3</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 4</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-        </PhraseSets>
-      </Category>
-      <Category>
-        <Title>New Category 3</Title>
-        <PhraseSets>
-          <PhraseSet>
-            <Title>New PhraseSet 0</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 1</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 2</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 3</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 4</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-        </PhraseSets>
-      </Category>
-      <Category>
-        <Title>New Category 4</Title>
-        <PhraseSets>
-          <PhraseSet>
-            <Title>New PhraseSet 0</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 1</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 2</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 3</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
-            </Phrases>
-          </PhraseSet>
-          <PhraseSet>
-            <Title>New PhraseSet 4</Title>
-            <Phrases>
-              <Phrase>
-                <Left>New Left 0</Left>
-                <Right>New Right 0</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 1</Left>
-                <Right>New Right 1</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 2</Left>
-                <Right>New Right 2</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 3</Left>
-                <Right>New Right 3</Right>
-              </Phrase>
-              <Phrase>
-                <Left>New Left 4</Left>
-                <Right>New Right 4</Right>
-              </Phrase>
+              <Phrase><Left>amphotericin B</Left><Right>Abelcet</Right></Phrase>
+              <Phrase><Left>Accupril</Left><Right>amphotericin B</Right></Phrase>
+              <Phrase><Left>Aciphex</Left><Right>Accupril</Right></Phrase>
+              <Phrase><Left>acetaminophen</Left><Right>Aciphex</Right></Phrase>
+              <Phrase><Left>acetaZOLAMIDE</Left><Right>acetaminophen</Right></Phrase>
+              <Phrase><Left>acetaZOLAMIDE</Left><Right>acetaZOLAMIDE</Right></Phrase>
+              <Phrase><Left>acetaminophen</Left><Right>acetaZOLAMIDE</Right></Phrase>
+              <Phrase><Left>acetaZOLAMIDE</Left><Right>acetaminophen</Right></Phrase>
+              <Phrase><Left>acetoHEXAMIDE</Left><Right>acetaZOLAMIDE</Right></Phrase>
+              <Phrase><Left>acetic acid for irrigation</Left><Right>acetoHEXAMIDE</Right></Phrase>
+              <Phrase><Left>glacial acetic acid</Left><Right>acetic acid for irrigation</Right></Phrase>
+              <Phrase><Left>acetoHEXAMIDE</Left><Right>glacial acetic acid</Right></Phrase>
+              <Phrase><Left>acetaZOLAMIDE</Left><Right>acetoHEXAMIDE</Right></Phrase>
+              <Phrase><Left>Aciphex</Left><Right>acetaZOLAMIDE</Right></Phrase>
+              <Phrase><Left>Accupril</Left><Right>Aciphex</Right></Phrase>
+              <Phrase><Left>Aciphex</Left><Right>Accupril</Right></Phrase>
+              <Phrase><Left>Aricept</Left><Right>Aciphex</Right></Phrase>
+              <Phrase><Left>Activase</Left><Right>Aricept</Right></Phrase>
+              <Phrase><Left>Cathflo Activase</Left><Right>Activase</Right></Phrase>
+              <Phrase><Left>Activase</Left><Right>Cathflo Activase</Right></Phrase>
+              <Phrase><Left>TNKase</Left><Right>Activase</Right></Phrase>
+              <Phrase><Left>Actonel</Left><Right>TNKase</Right></Phrase>
+              <Phrase><Left>Actos</Left><Right>Actonel</Right></Phrase>
+              <Phrase><Left>Actos</Left><Right>Actos</Right></Phrase>
+              <Phrase><Left>Actonel</Left><Right>Actos</Right></Phrase>
+              <Phrase><Left>Adacel (Tdap)</Left><Right>Actonel</Right></Phrase>
+              <Phrase><Left>Daptacel (DTaP)</Left><Right>Adacel (Tdap)</Right></Phrase>
+              <Phrase><Left>Adderall</Left><Right>Daptacel (DTaP)</Right></Phrase>
+              <Phrase><Left>Adderall XR</Left><Right>Adderall</Right></Phrase>
+              <Phrase><Left>Adderall</Left><Right>Adderall XR</Right></Phrase>
+              <Phrase><Left>Inderal</Left><Right>Adderall</Right></Phrase>
+              <Phrase><Left>Adderall XR</Left><Right>Inderal</Right></Phrase>
+              <Phrase><Left>Adderall</Left><Right>Adderall XR</Right></Phrase>
+              <Phrase><Left>ado-trastuzumab emtansine</Left><Right>Adderall</Right></Phrase>
+              <Phrase><Left>trastuzumab</Left><Right>ado-trastuzumab emtansine</Right></Phrase>
+              <Phrase><Left>Advair</Left><Right>trastuzumab</Right></Phrase>
+              <Phrase><Left>Advicor</Left><Right>Advair</Right></Phrase>
+              <Phrase><Left>Advicor</Left><Right>Advicor</Right></Phrase>
+              <Phrase><Left>Advair</Left><Right>Advicor</Right></Phrase>
+              <Phrase><Left>Advicor</Left><Right>Advair</Right></Phrase>
+              <Phrase><Left>Altocor</Left><Right>Advicor</Right></Phrase>
+              <Phrase><Left>Afrin (oxymetazoline)</Left><Right>Altocor</Right></Phrase>
+              <Phrase><Left>Afrin (saline)</Left><Right>Afrin (oxymetazoline)</Right></Phrase>
+              <Phrase><Left>Afrin (saline)</Left><Right>Afrin (saline)</Right></Phrase>
+              <Phrase><Left>Afrin (oxymetazoline)</Left><Right>Afrin (saline)</Right></Phrase>
+              <Phrase><Left>Aggrastat</Left><Right>Afrin (oxymetazoline)</Right></Phrase>
+              <Phrase><Left>argatroban</Left><Right>Aggrastat</Right></Phrase>
+              <Phrase><Left>Aldara</Left><Right>argatroban</Right></Phrase>
+              <Phrase><Left>Alora</Left><Right>Aldara</Right></Phrase>
+              <Phrase><Left>Alkeran</Left><Right>Alora</Right></Phrase>
+              <Phrase><Left>Leukeran</Left><Right>Alkeran</Right></Phrase>
+              <Phrase><Left>Alkeran</Left><Right>Leukeran</Right></Phrase>
+              <Phrase><Left>Myleran</Left><Right>Alkeran</Right></Phrase>
+              <Phrase><Left>Allegra (fexofenadine)</Left><Right>Myleran</Right></Phrase>
+              <Phrase><Left>Allegra Anti-Itch Cream (diphenhydrAMINE/allantoin)</Left><Right>Allegra (fexofenadine)</Right></Phrase>
+              <Phrase><Left>Allegra</Left><Right>Allegra Anti-Itch Cream (diphenhydrAMINE/allantoin)    </Right></Phrase>
+              <Phrase><Left>Viagra</Left><Right>Allegra</Right></Phrase>
+              <Phrase><Left>Allegra Anti-Itch Cream (diphenhydrAMINE/allantoin)</Left><Right>Viagra</Right></Phrase>
+              <Phrase><Left>Allegra (fexofenadine)</Left><Right>Allegra Anti-Itch Cream (diphenhydrAMINE/allantoin)    </Right></Phrase>
+              <Phrase><Left>Alora</Left><Right>Allegra (fexofenadine)</Right></Phrase>
+              <Phrase><Left>Aldara</Left><Right>Alora</Right></Phrase>
+              <Phrase><Left>ALPRAZolam</Left><Right>Aldara</Right></Phrase>
+              <Phrase><Left>clonazePAM</Left><Right>ALPRAZolam</Right></Phrase>
+              <Phrase><Left>ALPRAZolam</Left><Right>clonazePAM</Right></Phrase>
+              <Phrase><Left>LORazepam</Left><Right>ALPRAZolam</Right></Phrase>
+              <Phrase><Left>Altocor</Left><Right>LORazepam</Right></Phrase>
+              <Phrase><Left>Advicor</Left><Right>Altocor</Right></Phrase>
+              <Phrase><Left>amantadine</Left><Right>Advicor</Right></Phrase>
+              <Phrase><Left>amiodarone</Left><Right>amantadine</Right></Phrase>
+              <Phrase><Left>Amaryl</Left><Right>amiodarone</Right></Phrase>
+              <Phrase><Left>Reminyl</Left><Right>Amaryl</Right></Phrase>
+              <Phrase><Left>Ambisome</Left><Right>Reminyl</Right></Phrase>
+              <Phrase><Left>amphotericin B</Left><Right>Ambisome</Right></Phrase>
+              <Phrase><Left>Amicar</Left><Right>amphotericin B</Right></Phrase>
+              <Phrase><Left>Omacor</Left><Right>Amicar</Right></Phrase>
+              <Phrase><Left>Amikin</Left><Right>Omacor</Right></Phrase>
+              <Phrase><Left>Kineret</Left><Right>Amikin</Right></Phrase>
+              <Phrase><Left>aMILoride</Left><Right>Kineret</Right></Phrase>
+              <Phrase><Left>amLODIPine</Left><Right>aMILoride</Right></Phrase>
+              <Phrase><Left>amiodarone</Left><Right>amLODIPine</Right></Phrase>
+              <Phrase><Left>amantadine</Left><Right>amiodarone</Right></Phrase>
+              <Phrase><Left>amLODIPine</Left><Right>amantadine</Right></Phrase>
+              <Phrase><Left>aMILoride</Left><Right>amLODIPine</Right></Phrase>
+              <Phrase><Left>amphotericin B</Left><Right>aMILoride</Right></Phrase>
+              <Phrase><Left>Anem</Left><Right>Anemia</Right></Phrase>
+              <Phrase><Left>Aneu</Left><Right>Aneurysm</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angina</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angina pectoris</Right></Phrase>
+              <Phrase><Left>Angi</Left><Right>Angioplasty</Right></Phrase>
+              <Phrase><Left>Anti</Left><Right>Antihypertensive</Right></Phrase>
+              <Phrase><Left>Anti</Left><Right>Antithrombotic</Right></Phrase>
+              <Phrase><Left>Arrh</Left><Right>Arrhythmia</Right></Phrase>
+              <Phrase><Left>Athe</Left><Right>Atherosclerosis</Right></Phrase>
+              <Phrase><Left>Bloo</Left><Right>Blood clot</Right></Phrase>
+              <Phrase><Left>Bloo</Left><Right>Blood pressure</Right></Phrase>
+              <Phrase><Left>Body</Left><Right>Body mass index (BMI)</Right></Phrase>
+              <Phrase><Left>Brad</Left><Right>Bradycardia</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiomyopathy</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiomyopathy</Right></Phrase>
+              <Phrase><Left>Card</Left><Right>Cardiovascular</Right></Phrase>
+              <Phrase><Left>Caro</Left><Right>Carotid endarterectomy</Right></Phrase>
+              <Phrase><Left>Cere</Left><Right>Cerebrovascular</Right></Phrase>
+              <Phrase><Left>Cyan</Left><Right>Cyanosis</Right></Phrase>
+              <Phrase><Left>Dias</Left><Right>Diastole</Right></Phrase>
+              <Phrase><Left>Dila</Left><Right>Dilatation</Right></Phrase>
+              <Phrase><Left>Dysp</Left><Right>Dyspnea</Right></Phrase>
+              <Phrase><Left>Hype</Left><Right>Hypertension</Right></Phrase>
+              <Phrase><Left>Insu</Left><Right>Insufficiency</Right></Phrase>
+              <Phrase><Left>Isch</Left><Right>Ischemia</Right></Phrase>
+              <Phrase><Left>Prol</Left><Right>Prolapse</Right></Phrase>
+              <Phrase><Left>Regu</Left><Right>Regurgitation</Right></Phrase>
+              <Phrase><Left>Sten</Left><Right>Stenosis</Right></Phrase>
+              <Phrase><Left>Sync</Left><Right>Syncope</Right></Phrase>
+              <Phrase><Left>Syst</Left><Right>Systole</Right></Phrase>
+              <Phrase><Left>Tach</Left><Right>Tachycardia</Right></Phrase>
             </Phrases>
           </PhraseSet>
         </PhraseSets>
       </Category>
     </CategorySet>
+    <CategorySet>
+      <Category>
+        <Title>Personnel</Title>
+        <PhraseSets><PhraseSet><Title>Support</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Personal</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Doctors</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Nurses</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+      </Category>
+    </CategorySet>
+    <CategorySet>
+      <Category>
+        <Title>Geography</Title>
+        <PhraseSets><PhraseSet><Title>Hospitals</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Counties</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Residential</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+      </Category>
+    </CategorySet>
+    <CategorySet>
+      <Category>
+        <Title>Misc</Title>
+        <PhraseSets><PhraseSet><Title>Common Misspellings</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Salutaions</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Jokes</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+        <PhraseSets><PhraseSet><Title>Apologies</Title><Phrases></Phrases></PhraseSet></PhraseSets>
+      </Category>
+    </CategorySet>
   </Profile>
-  <PhraseSet>
-    <Title>New PhraseSet 0</Title>
-    <Phrases>
-      <Phrase>
-        <Left>New Left 0</Left>
-        <Right>New Right 0</Right>
-      </Phrase>
-      <Phrase>
-        <Left>New Left 1</Left>
-        <Right>New Right 1</Right>
-      </Phrase>
-      <Phrase>
-        <Left>New Left 2</Left>
-        <Right>New Right 2</Right>
-      </Phrase>
-      <Phrase>
-        <Left>New Left 3</Left>
-        <Right>New Right 3</Right>
-      </Phrase>
-      <Phrase>
-        <Left>New Left 4</Left>
-        <Right>New Right 4</Right>
-      </Phrase>
-    </Phrases>
-  </PhraseSet>
 </AppModel>
